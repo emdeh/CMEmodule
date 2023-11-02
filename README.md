@@ -4,7 +4,7 @@
 
 It is crucial to compile the CME project using Poetry (https://python-poetry.org/), which is recommended when building projects.
 
-This this section for how to start using Poetry to run CrackMapExec - https://academy.hackthebox.com/module/84/section/797
+See this section for how to start using Poetry to run CrackMapExec - https://academy.hackthebox.com/module/84/section/797
 
 Once CME has been installed with Poetry, copy the module's pythone file into the ./CrackMapExec/cme/modules folder.
 

@@ -15,7 +15,9 @@ extract_usernames/
 
 # Diagram
 <p align="center">
+
 ![UML and code flow diagram](diagram.jpg)
+
 </p>
 ## UserListFromRIDBrute.py
 

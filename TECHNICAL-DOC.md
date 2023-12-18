@@ -15,11 +15,11 @@ extract_usernames/
 
 ## extract_usernames.py
 
-**Purpose:** Processes the --rid-brute output file to extract usernames where sidtype is 'SidTypeUser'.
+**Purpose:** Processes the `--rid-brute `output file to extract usernames where sidtype is 'SidTypeUser'.
 
 **Key Methods:**
 
-- `options(context, module_options)`: Handles input options, specifically the file path for the --rid-brute output.
+- `options(context, module_options)`: Handles input options, specifically the file path for the `--rid-brute` output.
 - `on_admin_login(context, smb_connection)`: Triggered on an authenticated administrative session; handles file parsing and username extraction.
 - `extract_usernames(rid_output)`: Extracts usernames from the provided RID brute output using a regular expression.
 

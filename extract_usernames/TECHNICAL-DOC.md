@@ -60,7 +60,7 @@ The `UserListFromRIDBrute` module is utilised by specifying it with the -M flag 
 - Integration Testing: Testing the module in conjunction with CrackMapExec against a controlled environment.
 
 # User documentation
-[User documentation](Create-UserList-From-ridBrute-README.md)
+[User documentation](USER-DOC.md)
 
 # Contributing
 Contributions should follow the established code structure and styling guidelines. Please ensure that all pull requests are accompanied by corresponding tests.

@@ -1,4 +1,4 @@
-# User Documentation -  UserListFromRIDBrute Module
+# Extract Usernames Module - User Documentation
 
 ## Overview
 The `UserListFromRIDBrute` module for CrackMapExec (CME) is designed to process output from the `--rid-brute` flag and extract usernames where `sidtype` is 'SidTypeUser'. This functionality is crucial when working with domain user accounts, particularly when `NULL` Authentication is enabled.

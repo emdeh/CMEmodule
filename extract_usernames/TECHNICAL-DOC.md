@@ -19,6 +19,7 @@ extract_usernames/
 ![UML and code flow diagram](diagram.jpg)
 
 </p>
+
 ## UserListFromRIDBrute.py
 
 **Purpose:** Processes the `--rid-brute `output file to extract usernames where sidtype is 'SidTypeUser'.

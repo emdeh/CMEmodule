@@ -1,7 +1,7 @@
 # User Documentation -  UserListFromRIDBrute Module
 
 ## Overview
-The `UserListFromRIDBrute` module for CrackMapExec (CME) is designed to process output from the `--rid-brute` flag and extract usernames where `sidtype` is 'SidTypeUser'. This functionality is crucial when working with domain user accounts, particularly when NULL Authentication is enabled.
+The `UserListFromRIDBrute` module for CrackMapExec (CME) is designed to process output from the `--rid-brute` flag and extract usernames where `sidtype` is 'SidTypeUser'. This functionality is crucial when working with domain user accounts, particularly when `NULL` Authentication is enabled.
 
 ## Functionality
 The `--rid-brute` flag functions by enumerating domain objects through their Relative Identifiers (RID), which are unique to each account within a Windows domain. The process involves:
@@ -40,7 +40,9 @@ The output from the `--rid-brute` command is structured in JSON format, with eac
 ```
 ## Preparing Output for ASREPRoast
 
-To prepare the raw data for identifying ASREPRoastable accounts, the information must be filtered to include only the objects where `sidtype` equals 'SidTypeUser'. The `userListFromRIDBrute.py` script, used as a custom module in CrackMapExec, serves this purpose by processing the output file.
+To prepare the raw data for identifying ASREPRoastable accounts, the information must be filtered to include only the objects where `sidtype` equals 'SidTypeUser'. 
+
+The [`userListFromRIDBrute.py`](userListFromRIDBrute.py) script, used as a custom module in CrackMapExec, serves this purpose by processing the output file.
 
 ### Using the Module
 

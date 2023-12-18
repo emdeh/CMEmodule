@@ -34,16 +34,16 @@ extract_usernames/
 # Dependencies
 - Python 3.x installed.
 - CrackMapExec with support for custom modules.
-- The re module for regular expression operations.
-- The cme.helpers.logger module for logging and highlighting output.
+- The `re` module for regular expression operations.
+- The `cme.helpers.logger` module for logging and highlighting output.
 
 ## Setup and Configuration
 
 **1. Module Installation:**
-Place the extract_usernames.py script into the CME custom modules directory.
+Place the `extract_usernames.py` script into the CME custom modules directory.
 
 **2. Running the Module:**
-Execute the module by specifying the path to the --rid-brute output file:
+Execute the module by specifying the path to the `--rid-brute` output file:
 
 ```bash
 Copy code
@@ -54,9 +54,9 @@ crackmapexec smb $TargetIP -u '' -p '' -M extract_usernames -o FILE=<rid_brute_o
 The `extract_usernames` module is utilized by specifying it with the -M flag in CrackMapExec, along with the path to the `--rid-brute` output file.
 
 # Error Handling
-- File Read Errors: Managed within the on_admin_login method.
-- Regular Expression Match Errors: Handled in the extract_usernames method.
-- Input Validation Errors: Checked in the options method.
+- File Read Errors: Managed within the `on_admin_login()` method.
+- Regular Expression Match Errors: Handled in the `extract_usernames()` method.
+- Input Validation Errors: Checked in the `options()` method.
 
 # Testing
 - Unit Testing: Individual methods can be tested using Python's unittest framework.

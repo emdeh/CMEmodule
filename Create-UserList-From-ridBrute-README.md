@@ -12,7 +12,7 @@ The `--rid-brute` flag functions by enumerating domain objects through their Rel
 
 By default, it works up to RID 4000, which can be altered with the `--rid-brute [MAX_RID]` syntax.
 
-### Example of Usage
+# Example of Usage
 ```bash
 crackmapexec smb $TargetIP -u '' -p '' --rid-brute 8000 > ridOutput.txt
 ```
@@ -44,7 +44,7 @@ To prepare the raw data for identifying ASREPRoastable accounts, the information
 
 The [`userListFromRIDBrute.py`](userListFromRIDBrute.py) script, used as a custom module in CrackMapExec, serves this purpose by processing the output file.
 
-### Using the Module
+## Using the Module
 
 After obtaining the output from the `--rid-brute` command, you can use the `userListFromRIDBrute.py` script as follows:
 

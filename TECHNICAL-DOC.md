@@ -1,19 +1,19 @@
 # Extract Usernames Module - Technical Documentation
 
-This document provides a comprehensive technical overview of the `extract_usernames` module for CrackMapExec (CME), detailing its structure, components, and usage.
+This document provides a comprehensive technical overview of the `UserListFromRIDBrute` module for CrackMapExec (CME), detailing its structure, components, and usage.
 
 ## Overview
-The `extract_usernames` module is designed to process the output from CrackMapExec's `--rid-brute` flag, specifically extracting usernames where the `sidtype` is 'SidTypeUser'. This module is useful in cybersecurity contexts, particularly when analysing domain user accounts.
+The `UserListFromRIDBrute` module is designed to process the output from CrackMapExec's `--rid-brute` flag, specifically extracting usernames where the `sidtype` is 'SidTypeUser'. This module is useful in cybersecurity contexts, particularly when analysing domain user accounts.
 
 # Module Structure
 
 ```plaintext
 extract_usernames/
 │
-└── extract_usernames.py - Main module for extracting usernames from the `--rid-brute` output.
+└── UserListFromRIDBrute.py - Main module for extracting usernames from the `--rid-brute` output.
 ```
 
-## extract_usernames.py
+## UserListFromRIDBrute.py
 
 **Purpose:** Processes the `--rid-brute `output file to extract usernames where sidtype is 'SidTypeUser'.
 
@@ -40,18 +40,15 @@ extract_usernames/
 ## Setup and Configuration
 
 **1. Module Installation:**
-Place the `extract_usernames.py` script into the CME custom modules directory.
+Place the `UserListFromRIDBrute.py` script into the CME custom modules directory.
 
 **2. Running the Module:**
 Execute the module by specifying the path to the `--rid-brute` output file:
 
-```bash
-Copy code
-crackmapexec smb $TargetIP -u '' -p '' -M extract_usernames -o FILE=<rid_brute_output_file>
-```
+```crackmapexec smb $TargetIP -u '' -p '' -M userListFromRIDBrute -o FILE=<rid_brute_output_file>```
 
 # Usage
-The `extract_usernames` module is utilized by specifying it with the -M flag in CrackMapExec, along with the path to the `--rid-brute` output file.
+The `UserListFromRIDBrute` module is utilised by specifying it with the -M flag in CrackMapExec, along with the path to the `--rid-brute` output file.
 
 # Error Handling
 - File Read Errors: Managed within the `on_admin_login()` method.

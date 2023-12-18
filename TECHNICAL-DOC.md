@@ -3,14 +3,14 @@
 This document provides a comprehensive technical overview of the `extract_usernames` module for CrackMapExec (CME), detailing its structure, components, and usage.
 
 ## Overview
-The `extract_usernames` module is designed to process the output from CrackMapExec's `--rid-brute` flag, specifically extracting usernames where the `sidtype` is 'SidTypeUser'. This module is useful in cybersecurity contexts, particularly when analyzing domain user accounts.
+The `extract_usernames` module is designed to process the output from CrackMapExec's `--rid-brute` flag, specifically extracting usernames where the `sidtype` is 'SidTypeUser'. This module is useful in cybersecurity contexts, particularly when analysing domain user accounts.
 
 # Module Structure
 
 ```plaintext
 extract_usernames/
 │
-└── extract_usernames.py      - Main module for extracting usernames from the `--rid-brute` output.
+└── extract_usernames.py - Main module for extracting usernames from the `--rid-brute` output.
 ```
 
 ## extract_usernames.py

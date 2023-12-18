@@ -13,6 +13,10 @@ extract_usernames/
 └── UserListFromRIDBrute.py - Main module for extracting usernames from the `--rid-brute` output.
 ```
 
+# Diagram
+<p align="center">
+![UML and code flow diagram](diagram.jpg)
+</p>
 ## UserListFromRIDBrute.py
 
 **Purpose:** Processes the `--rid-brute `output file to extract usernames where sidtype is 'SidTypeUser'.

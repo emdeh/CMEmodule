@@ -41,3 +41,5 @@ class CMEModule(Module):
         """
         usernames = re.findall(r"\'username\': \'(.*?)\', \'sidtype\': \'SidTypeUser\'", rid_output)
         return usernames
+    
+#
